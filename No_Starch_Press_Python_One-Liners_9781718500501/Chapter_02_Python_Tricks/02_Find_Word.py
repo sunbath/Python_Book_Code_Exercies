@@ -9,7 +9,7 @@ of the world. It is a way I have of driving off the spleen, and regulating
  the circulation. - Moby Dick'''
 
 # Find any word with length > 3
-lines = [line for line in text.split('\n')]
+#lines = [line for line in text.split('\n')]
 #pprint.pprint(lines)
-words = [[x for x in line.split(' ') if len(x)>3] for line in text.split('\n')]
+words = [[x for x in line.split(' ') if len(x)>7] for line in text.split('\n')]
 pprint.pprint(words)

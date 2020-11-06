@@ -1,0 +1,10 @@
+The code assumes that you’ve stored this code snippet in a file named readFileDefault.py in a folder. The code then opens this file, creates an empty list, lines, and fills the list with strings by using the append() operation in the for loop body to iterate over all the lines in the file. You also use the string method strip() to remove any leading or trailing whitespace (otherwise,
+the newline character '\n' would appear in the strings).
+To access files on your computer, you need to know how to open 
+and close files. You can access a file’s data only after you’ve opened it. 
+After clos- ing the file, you can be sure that the data was written into the 
+file. Python may create a buffer and wait for a while before it writes the whole 
+buffer into the file (Figure 2-1). The reason for this is simple: file access is 
+slow. For efficiency reasons, Python avoids writing every single bit independently. 
+Instead, it waits until the buffer has filled with enough bytes and then flushes the 
+whole buffer at once into the file.
