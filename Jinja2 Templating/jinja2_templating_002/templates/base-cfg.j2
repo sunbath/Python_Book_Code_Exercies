@@ -7,3 +7,10 @@ ip name-server {{ name_server_sec }}
 !
 ntp server {{ ntp_server_pri }} prefer
 ntp server {{ ntp_server_sec }}
+!
+interface {{ interface.name }}
+ description {{ interface.description }}
+ ip address {{ interface.ip_address }}
+ speed {{ interface.speed }}
+ duplex {{ interface.duplex }}
+ mtu {{ interface.mtu }}
