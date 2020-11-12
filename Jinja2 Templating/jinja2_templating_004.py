@@ -2,13 +2,13 @@ from jinja2 import Template
 
 template = """hostname {{ hostname }}
 
-{# DNS configuration #}
+{# DNS configuration -#}
 no ip domain lookup
 ip domain name local.lab
 ip name-server {{ name_server_pri }}
 ip name-server {{ name_server_sec }}
 
-{# Time servers config, we should use pool.ntp.org #}
+{# Time servers config, we should use pool.ntp.org -#}
 ntp server {{ ntp_server_pri }} prefer
 ntp server {{ ntp_server_sec }}
 ntp server {{ ntp_server_trd }}"""
